@@ -1,0 +1,17 @@
+{
+  "name": "mini_projeto.pda",
+  "version": "1.0.0",
+  "description": "Projeto construído no modulo 04 do curso Programadores do Amanhã",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node --watch src/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "uuid": "^10.0.0"
+  }
+}
