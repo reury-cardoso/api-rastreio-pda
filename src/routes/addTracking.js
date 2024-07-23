@@ -3,12 +3,12 @@ import { addItem } from "../controllers/addTracking.controller.js";
 
 const addTrackingRouter = Router();
 
-addTrackingRouter.post('/track', (req, res) => {
+addTrackingRouter.post('/track', async (req, res) => {
   const { nameItem, recipient, address } = req.body;
 
   if(!nameItem || !recipient || !address) return res.status(400).json({ message: 'Todos os campos são obrigatórios' });
 
-  const addPackage = addItem(recipient, address)
+  const addPackage = await addItem(recipient, address)
 
   if(!addPackage) return res.status(500).json({ message: 'Erro ao adicionar item' });
 

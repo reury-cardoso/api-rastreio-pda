@@ -81,6 +81,10 @@ Aqui estão as rotas principais da API:
 - **PATCH /update:** Atualiza o histórico de rastreamento com as informações fornecidas no corpo da requisição.
 - **GET /counterAll:** Obtém a contagem de todos os itens.
 
+## Exemplos em Vídeo
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NLJSokxMGGs?si=1BOOg1n-oqEsTeHO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ## Requisitos
 
 - Node.js (v14 ou superior)

@@ -6,13 +6,12 @@ function checkExisting(trackingNumber) {
 };
 
 function generateTrackingNumber() {
-  const number = Math.floor(Math.random() * 1000000);
+  const number = Math.floor(Math.random() * 1000000).toString().padStart(6, '0');
   const trackingNumber = `PDA${number}DEV`;
 
   const resultCheck = checkExisting(trackingNumber)
 
-  const pattern = /^PDA\d{6}DEV$/;
-  if (resultCheck || !pattern.test(trackingNumber)) {
+  if (resultCheck) {
     generateTrackingNumber();
   } else {
     return trackingNumber;
