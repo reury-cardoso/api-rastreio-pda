@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "5371aa03-a834-4d2b-a089-5b676d0bcc5f",
+		"name": "PROJECT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33409025"
+	},
+	"item": [
+		{
+			"name": "getItemRouter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/track/PDA109894DEV",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"track",
+						"PDA109894DEV"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addPackage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nameItem\": \"Livro de Receitas \",\r\n    \"recipient\": \"Juliana Mendes\",\r\n    \"address\": \"Rua do Sol, 789, Casa 12, Vila Nova, Belo Horizonte, MG, 30100-000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/track",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"track"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllRouter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/packages",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"packages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteTrackingRouter",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/track/d47ac10b-58cc-4372-a567-0e02b2c3d480",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"track",
+						"d47ac10b-58cc-4372-a567-0e02b2c3d480"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateHistoryRouter",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": \"209ff323-db7f-4cf0-aba8-0334cb687332\",\r\n    \"location\": \"Centro, Avenida Brasil 101\",\r\n    \"status\": \"Entregue\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "counterAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/counterAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"counterAll"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

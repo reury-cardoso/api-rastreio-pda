@@ -81,6 +81,12 @@ Aqui estão as rotas principais da API:
 - **PATCH /update:** Atualiza o histórico de rastreamento com as informações fornecidas no corpo da requisição.
 - **GET /counterAll:** Obtém a contagem de todos os itens.
 
+## Importar no Postman
+
+Caso queira, você pode baixar este arquivo e importar no programa de API Postman para testar todas as rotas facilmente.
+
+[Baixe o arquivo de configuração para o Postman](postman_model.json)
+
 ## Exemplos em Vídeo
 
 [![Exemplos em Vídeo](https://img.youtube.com/vi/NLJSokxMGGs/0.jpg)](https://www.youtube.com/watch?v=NLJSokxMGGs)
@@ -94,7 +100,7 @@ Aqui estão as rotas principais da API:
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/reury-cardoso/api-restreio-pda
+    git clone https://github.com/reury-cardoso/api-restreio-pda.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
